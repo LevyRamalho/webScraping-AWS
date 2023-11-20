@@ -4,7 +4,7 @@
 
 Esse projeto foi feito com o proposito de treinar minhas técnicas de programação utilizando python. O código apresenta como fazer Web Scraping em paginas de conteudo dinamico feitos em javasript utilizando **Python** e **Selenium**. 
 
-Usei como dados o site da NBA para extrair informações estatísticas dos jogadores e gerar um arquivo json.
+Usei como dados o site da NBA para extrair informações estatísticas dos jogadores e gerar um arquivo json. A partir desse arquivo desejo fazer o upload em um Bucket do AWS usando a biblioteca **boto3**.
 
 **Importante: apenas para fins educacionais**
 
@@ -39,3 +39,10 @@ Utilizando a biblioteca **Selenium** as atividades dessa etapa foram divididas d
  2. Renomear as colunas para nomes mais legíveis usando o comando `.rename(columns={})`.
  3. Coverter o dataframe para um dicionário pandas usando o comando `.to_dict('records')`.
  4. Converter para JSON e salvar o arquivo com nome `dados.json`.
+
+### 2.3 Load em um Bucket AWS
+
+Utilizando a biblioteca boto3 que é um SDK da Amazon para Python que manipula recursos da AWS realizei as seguintes atividades:
+
+ 1. Inicializando o serviço S3 da AWS usando o `boto3.resource` da biblioteca boto3.
+ 2. Uploading do arquivo desejado usando a seguinte linha de código: `s3.Bucket("webscraping2023").upload_file('ranking.json',"ranking.json")`. Essa abordagem, acessa primeiro o bucket e depois faz o Upload. 
