@@ -10,7 +10,7 @@ Usei como dados o site da NBA para extrair informações estatísticas dos jogad
 
 ## 2. Desenvolvimento da Solução
 
-**Objetivo:** Extrair os dados estatísticos do site da NBA usando a biblioteca Selenium com o Python e, a partir dos dados dados extraidos, criar um arquivo JSON que será carregado no AWS S3.
+**Objetivo:** Extrair os dados estatísticos do site da NBA usando a biblioteca Selenium com o Python e, a partir dos dados dados extraídos, criar um arquivo JSON que será carregado no AWS S3.
 
 > Este algoritmo foi desenvolvido para ser executado localmente, sendo o destino do arquivo JSON gerado o AWS S3
 
@@ -35,7 +35,7 @@ Utilizando a biblioteca **Selenium** as atividades dessa etapa foram divididas d
 
 ### 2.2 Tratamento
 
- 1. Excluir as colunas vazias que não são importantes usando o comando da bibioteca pandas `.dropna(axis=1)`.
+ 1. Excluir as colunas vazias que não são importantes usando o comando da biblioteca pandas `.dropna(axis=1)`.
  2. Renomear as colunas para nomes mais legíveis usando o comando `.rename(columns={})`.
  3. Coverter o dataframe para um dicionário pandas usando o comando `.to_dict('records')`.
  4. Converter para JSON e salvar o arquivo com nome `dados.json`.
