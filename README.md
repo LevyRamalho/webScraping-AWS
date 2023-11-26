@@ -2,9 +2,9 @@
 
 ## 1. Visão Geral
 
-Esse projeto foi feito com o proposito de treinar minhas técnicas de programação utilizando python. O código apresenta como fazer Web Scraping em paginas de conteudo dinamico feitos em javasript utilizando **Python** e **Selenium**. 
+Esse projeto foi feito com o proposito de treinar minhas técnicas de programação utilizando python. O código apresenta como fazer Web Scraping em paginas de conteúdo dinâmico feitos em javasript utilizando **Python** e **Selenium**. 
 
-Usei como dados o site da NBA para extrair informações estatísticas dos jogadores e gerar um arquivo json. A partir desse arquivo desejo fazer o upload em um Bucket do AWS usando a biblioteca **boto3**.
+Usei como dados o site da NBA para extrair informações estatísticas dos jogadores e gerar um arquivo json. A partir desse arquivo fiz o upload em um Bucket do AWS usando a biblioteca **boto3**.
 
 **Importante: apenas para fins educacionais**
 
